@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KATAIMDb</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-container">
+            <a href="index.html" class="logo">KATAIMDb<span>MOVIES</span></a>
+            
+            <nav class="nav-menu">
+                <a href="film.html"><i class="fas fa-film"></i> Фильмы</a>
+                <a href="serial.html"><i class="fas fa-tv"></i> Сериалы</a>
+                <a href="#"><i class="fas fa-star"></i> Актеры</a>
+                <a href="#"><i class="fas fa-award"></i> Награды</a>
+                <a href="#"><i class="fas fa-newspaper"></i> Новости</a>
+            </nav>
+            
+
+        </div>
+    </header>
+
+    <main class="container">
+        <section>
+            <h2 class="section-title">Новинки</h2>
+        </section>
+
+      <div class="gallery-wrapper">
+        <div class="main-slider">
+            <div class="slider-container">
+                <div class="slider-track">
+                    <div class="slide">
+                        <img src="img/51.jpg" alt="Now You See Me">
+                    </div>
+                </div>
+            </div>
+            
+
+
+            <div class="movie-info">
+                <h2 class="movie-title">
+                    Now You See Me: Now You Don't (2025)</h2>
+                <p class="movie-description">Четыре всадника возвращаются, к ним присоединяются новые иллюзионисты, которые демонстрируют беспрецедентные магические трюки, головокружительные трюки и удивительные сюрпризы, которых вы еще не видели.</p>
+                <div class="movie-meta">
+
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="thumbnails">
+            <div class="thumbnail active" data-index="0">
+                <img src="img/52.jpg" alt="Now You See Me">
+                <div class="thumbnail-overlay">
+                    <div class="thumbnail-title">The Last Of Us 2</div>
+                    <span class="card-year">Одни из нас 2</span>
+                    <div class="thumbnail-meta">
+
+                    </div>
+                </div>
+            </div>
+            <div class="thumbnail" data-index="1">
+                <img src="img/53.jpg" alt="Simple Favor">
+                <div class="thumbnail-overlay">
+                    <div class="thumbnail-title">Wednesday</div>
+                    <span class="card-year">Среда</span>
+                    <div class="thumbnail-meta">
+
+                    </div>
+                </div>
+            </div>
+            <div class="thumbnail" data-index="2">
+                <img src="img/54.jpg" alt="The Last Of Us">
+                <div class="thumbnail-overlay">
+                    <div class="thumbnail-title">Thunderers</div>
+                    <span class="card-year">Громовержцы</span>
+                    <div class="thumbnail-meta">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>      
+
+
+
+    <main class="container">
+        <section>
+            <h2 class="section-title">Сейчас смотрят!</h2>
+            
+            <div class="cards-row">
+                <div class="card" onclick="document.getElementById('movie1-info').classList.toggle('active')">
+                    <div class="card-poster">
+                        <img src="img/59.png" alt="Фильм 1">
+                        <div class="card-rating">8.4</div>
+                    </div>
+                    <div class="card-info">
+                        <h3 class="card-title">Пацаны</h3>
+                        <span class="card-year">2019-н.в.</span>
+                        <div class="card-genres">Супергеройский боевик, драма, черная комедия</div>
+                    </div>
+                </div>
+            <div class="card" onclick="document.getElementById('movie2-info').classList.toggle('active')">
+                    <div class="card-poster">
+                        <img src="img/58.png" alt="Фильм 2">
+                        <div class="card-rating">8.6</div>
+                    </div>
+                    <div class="card-info">
+                        <h3 class="card-title">Очень странные дела</h3>
+                        <span class="card-year">2016-н.в.</span>
+                        <div class="card-genres">Научная фантастика, ужасы, драма </div>
+                    </div>
+            </div>     
+            <div class="card" onclick="document.getElementById('movie3-info').classList.toggle('active')">
+                <div class="card-poster">
+                    <img src="img/57.png" alt="Фильм 3">
+                    <div class="card-rating">5.9</div>
+                </div>
+                <div class="card-info">
+                    <h3 class="card-title">Майнкрафт в кино</h3>
+                    <span class="card-year">2025</span>
+                    <div class="card-genres">Анимация, приключения, фэнтези</div>
+                </div>
+            </div>       
+            <div class="card" onclick="document.getElementById('movie4-info').classList.toggle('active')">
+                <div class="card-poster">
+                    <img src="img/56.png" alt="Фильм 4">
+                    <div class="card-rating">8.4</div>
+                </div>
+                <div class="card-info">
+                    <h3 class="card-title">Сверхъестественное</h3>
+                    <span class="card-year">2005-2020</span>
+                    <div class="card-genres">Ужасы, фэнтези, драма</div>
+                </div>
+            </div>
+            <div class="card" onclick="document.getElementById('movie5-info').classList.toggle('active')">
+                <div class="card-poster">
+                    <img src="img/55.png" alt="Фильм 5">
+                    <div class="card-rating">6.0</div>
+                </div>
+                <div class="card-info">
+                    <h3 class="card-title">Веном: Последний танец</h3>
+                    <span class="card-year">2024</span>
+                    <div class="card-genres">Фантастика, экшн, триллер</div>
+                </div>
+            </div>
+           
+            </div>
+            
+            <div id="movie1-info" class="info-panel">
+                <h3>Пацаны (The Boys, 2019–н.в.)</h3>
+                <p><strong>Рейтинг:</strong> 8.4/10</p>
+                <p><strong>Жанр:</strong> Супергеройский боевик, драма, черная комедия</p>
+                <p><strong>Режиссер:</strong> Эрик Крипке</p>
+                <p>В мире, где супергерои — коррумпированные знаменитости под контролем корпораций, группа обычных людей решает дать им отпор. «Пацаны» — история мрачного противостояния между элитными героями и теми, кто знает их истинное лицо.</p>
+            </div>
+            <div id="movie2-info" class="info-panel">
+                <h3>Очень странные дела (Stranger Things, 2016–н.в.)</h3>
+                <p><strong>Рейтинг:</strong> 8.6/10</p>
+                <p><strong>Жанр:</strong> Научная фантастика, ужасы, драма</p>
+                <p><strong>Режиссер:</strong> Братья Даффер</p>
+                <p>Таинственное исчезновение мальчика в маленьком городке становится началом цепи сверхъестественных событий. Друзья, семья и загадочная девочка со сверхспособностями сталкиваются с параллельным миром — Изнанкой.</p>
+            </div>
+            <div id="movie3-info" class="info-panel">
+                <h3>Майнкрафт в кино (Minecraft: The Movie, 2025)</h3>
+                <p><strong>Рейтинг:</strong> 5.9/10</p>
+                <p><strong>Жанр:</strong> Анимация, приключения, фэнтези</p>
+                <p><strong>Режиссер:</strong> Джаред Хесс</p>
+                <p>Фильм по мотивам культовой игры Minecraft расскажет о молодой героине, которая должна спасти свой кубический мир от разрушения после того, как могущественный Эндер-дракон вырывается на свободу.</p>
+            </div>
+
+                <div id="movie4-info" class="info-panel">
+                    <h3>Сверхъестественное (Supernatural, 2005–2020)</h3>
+                    <p><strong>Рейтинг:</strong> 8.4/10</p>
+                    <p><strong>Жанр:</strong> Ужасы, фэнтези, драма</p>
+                    <p><strong>Режиссер:</strong> Эрик Крипке</p>
+                    <p>Братья Винчестеры, Сэм и Дин, охотятся на демонов, призраков и другие сверхъестественные существа, пытаясь раскрыть тайны, связанные с их семьёй и миром тьмы.</p>
+                </div>
+
+                <div id="movie5-info" class="info-panel">
+                    <h3>Веном: Последний танец (Venom: The Last Dance, 2024)</h3>
+                    <p><strong>Рейтинг:</strong> 6.0/10</p>
+                    <p><strong>Жанр:</strong> Фантастика, экшн, триллер</p>
+                    <p><strong>Режиссер:</strong> Келли Марсел</p>
+                    <p>В финале трилогии Веном и журналист Эдди Брок сталкиваются с величайшей угрозой — как из своего мира, так и из вселенной чужих. Последняя битва определит судьбу симбионта и его хозяина.
+
+                    </p>
+                </div>
+                                             
+                       
+
+        </section>
+
+
+
+
+
+
+
+
+    <main class="container">
+        <section>
+            <h2 class="section-title">Популярные фильмы</h2>
+            
+            <div class="cards-row">
+                <div class="card" onclick="document.getElementById('movie1-info').classList.toggle('active')">
+                    <div class="card-poster">
+                        <img src="img/1.png" alt="Фильм 1">
+                        <div class="card-rating">9.3</div>
+                    </div>
+                    <div class="card-info">
+                        <h3 class="card-title">Побег из Шоушенка</h3>
+                        <span class="card-year">1994</span>
+                        <div class="card-genres">Драма</div>
+                    </div>
+                </div>
+            <div class="card" onclick="document.getElementById('movie2-info').classList.toggle('active')">
+                    <div class="card-poster">
+                        <img src="img/2.png" alt="Фильм 2">
+                        <div class="card-rating">9.2</div>
+                    </div>
+                    <div class="card-info">
+                        <h3 class="card-title">Крестный отец</h3>
+                        <span class="card-year">1972</span>
+                        <div class="card-genres">Криминальная драма </div>
+                    </div>
+            </div>     
+            <div class="card" onclick="document.getElementById('movie3-info').classList.toggle('active')">
+                <div class="card-poster">
+                    <img src="img/3.png" alt="Фильм 3">
+                    <div class="card-rating">9.0</div>
+                </div>
+                <div class="card-info">
+                    <h3 class="card-title">Тёмный рыцарь</h3>
+                    <span class="card-year">2008</span>
+                    <div class="card-genres">Боевик, супергеройский фильм</div>
+                </div>
+            </div>       
+            <div class="card" onclick="document.getElementById('movie4-info').classList.toggle('active')">
+                <div class="card-poster">
+                    <img src="img/4.png" alt="Фильм 4">
+                    <div class="card-rating">9.0</div>
+                </div>
+                <div class="card-info">
+                    <h3 class="card-title">Крестный отец 2</h3>
+                    <span class="card-year">1974</span>
+                    <div class="card-genres">Криминальная драма</div>
+                </div>
+            </div>
+            <div class="card" onclick="document.getElementById('movie5-info').classList.toggle('active')">
+                <div class="card-poster">
+                    <img src="img/5.png" alt="Фильм 5">
+                    <div class="card-rating">9.0</div>
+                </div>
+                <div class="card-info">
+                    <h3 class="card-title">12 разгневанных мужчин</h3>
+                    <span class="card-year">1957</span>
+                    <div class="card-genres">Драма</div>
+                </div>
+            </div>
+           
+            </div>
+            
+            <div id="movie1-info" class="info-panel">
+                <h3>Побег из Шоушенка (The Shawshank Redemption, 1994)</h3>
+                <p><strong>Рейтинг:</strong> 9.3/10</p>
+                <p><strong>Жанр:</strong> Драма</p>
+                <p><strong>Режиссер:</strong> Фрэнк Дарабонт</p>
+                <p>Банкир Энди Дюфрейн несправедливо осуждён за убийство жены и её любовника. В тюрьме Шоушенк он заводит дружбу с заключённым Рэдом и с годами планирует побег.</p>
+            </div>
+            <div id="movie2-info" class="info-panel">
+                <h3>Крестный отец (The Godfather, 1972)</h3>
+                <p><strong>Рейтинг:</strong> 9.2/10</p>
+                <p><strong>Жанр:</strong> Криминальная драма</p>
+                <p><strong>Режиссер:</strong> Фрэнсис Форд Коппола</p>
+                <p>История мафиозной семьи Корлеоне, где молодой Майкл Корлеоне вынужден занять место отца и стать новым главой криминальной империи.</p>
+            </div>
+            <div id="movie3-info" class="info-panel">
+                <h3>Тёмный рыцарь (The Dark Knight, 2008)</h3>
+                <p><strong>Рейтинг:</strong> 9.0/10</p>
+                <p><strong>Жанр:</strong> Боевик, супергеройский фильм</p>
+                <p><strong>Режиссер:</strong> Кристофер Нолан</p>
+                <p>Бэтмен сталкивается с хаотичным и безумным преступником — Джокером, угрожающим разрушить Готэм и его моральные устои.</p>
+            </div>
+
+                <div id="movie4-info" class="info-panel">
+                    <h3>Крестный отец 2 (The Godfather Part II, 1974)</h3>
+                    <p><strong>Рейтинг:</strong> 9.0/10</p>
+                    <p><strong>Жанр:</strong> Боевик, супергеройский фильм</p>
+                    <p><strong>Режиссер:</strong> Фрэнсис Форд Коппола</p>
+                    <p>Повествует как о становлении молодого Вито Корлеоне, так и о расширении власти его сына Майкла.</p>
+                </div>
+
+                <div id="movie5-info" class="info-panel">
+                    <h3>12 разгневанных мужчин (12 Angry Men, 1957)</h3>
+                    <p><strong>Рейтинг:</strong> 9.0/10</p>
+                    <p><strong>Жанр:</strong> Драма</p>
+                    <p><strong>Режиссер:</strong> Сидни Люмет</p>
+                    <p>12 присяжных решают судьбу подростка, обвинённого в убийстве. Один из них сомневается в виновности, что приводит к напряжённым обсуждениям.</p>
+                </div>
+                                             
+                       
+
+        </section>
+
+        <section>
+            <h2 class="section-title">Популярные сериалы</h2>
+            <div class="cards-row">
+                <div class="card" onclick="document.getElementById('movie6-info').classList.toggle('active')">
+                    <div class="card-poster">
+                        <img src="img/26.png" alt="Фильм 1">
+                        <div class="card-rating">9.5</div>
+                    </div>
+                    <div class="card-info">
+                        <h3 class="card-title">Во все тяжкие</h3>
+                        <span class="card-year">2008–2013</span>
+                        <div class="card-genres">Криминальная драма, триллер</div>
+                    </div>
+                </div>
+            <div class="card" onclick="document.getElementById('movie7-info').classList.toggle('active')">
+                    <div class="card-poster">
+                        <img src="img/27.png" alt="Фильм 1">
+                        <div class="card-rating">9.4</div>
+                    </div>
+                    <div class="card-info">
+                        <h3 class="card-title">Планета Земля 2</h3>
+                        <span class="card-year">2016</span>
+                        <div class="card-genres">Документальный, природа</div>
+                    </div>
+            </div>     
+            <div class="card" onclick="document.getElementById('movie8-info').classList.toggle('active')">
+                <div class="card-poster">
+                    <img src="img/28.png" alt="Фильм 1">
+                    <div class="card-rating">9.4</div>
+                </div>
+                <div class="card-info">
+                    <h3 class="card-title">Планета Земля</h3>
+                    <span class="card-year">2006</span>
+                    <div class="card-genres">Документальный, природа</div>
+                </div>
+            </div>       
+            <div class="card" onclick="document.getElementById('movie9-info').classList.toggle('active')">
+                <div class="card-poster">
+                    <img src="img/29.png" alt="Фильм 1">
+                    <div class="card-rating">9.4</div>
+                </div>
+                <div class="card-info">
+                    <h3 class="card-title">Братья по оружию</h3>
+                    <span class="card-year">2001</span>
+                    <div class="card-genres">Военная драма, исторический</div>
+                </div>
+            </div>
+            <div class="card" onclick="document.getElementById('movie10-info').classList.toggle('active')">
+                <div class="card-poster">
+                    <img src="img/30.png" alt="Фильм 1">
+                    <div class="card-rating">9.3</div>
+                </div>
+                <div class="card-info">
+                    <h3 class="card-title">Чернобыль</h3>
+                    <span class="card-year">2019</span>
+                    <div class="card-genres">Историческая драма, триллер</div>
+                </div>
+            </div>
+           
+            </div>
+            
+            <div id="movie6-info" class="info-panel">
+                <h3>Во все тяжкие (Breaking Bad, 2008–2013)</h3>
+                <p><strong>Рейтинг:</strong> 9.5/10</p>
+                <p><strong>Жанр:</strong> Криминальная драма, триллер</p>
+                <p><strong>Режиссер:</strong> Винс Гиллиган</p>
+                <p>Учитель химии Уолтер Уайт, узнав о смертельной болезни, решает варить метамфетамин вместе с бывшим учеником, чтобы обеспечить семью.</p>
+
+
+            </div>
+            <div id="movie7-info" class="info-panel">
+                <h3>Планета Земля 2 (Planet Earth, 2006)</h3>
+                <p><strong>Рейтинг:</strong> 9.4/10</p>
+                <p><strong>Жанр:</strong> Боевик, Триллер, Фантастика</p>
+                <p><strong>Режиссер:</strong> BBC</p>
+                <p>Продолжение легендарной серии, с ещё более захватывающими съёмками животных и пейзажей на шести континентах.</p>
+            </div>
+            <div id="movie8-info" class="info-panel">
+                <h3>Планета Земля (Planet Earth , 2006)</h3>
+                <p><strong>Рейтинг:</strong> 9.4/10</p>
+                <p><strong>Жанр:</strong> Боевик, Триллер, Фантастика</p>
+                <p><strong>Режиссер:</strong> BBC</p>
+                <p>Переворот в мире документалистики благодаря новаторским съёмкам</p>
+            </div>
+            <div id="movie9-info" class="info-panel">
+                <h3>Братья по оружию (Band of Brothers, 2001)</h3>
+                <p><strong>Рейтинг:</strong> 9.4/10</p>
+                <p><strong>Жанр:</strong> Боевик, Триллер, Фантастика</p>
+                <p><strong>Режиссер:</strong> Стивен Спилберг, Том Хэнкс</p>
+                <p>Основан на реальных событиях — история роты «Изи» из 101-й воздушно-десантной дивизии США во время Второй мировой войны.</p>
+            </div>
+            <div id="movie10-info" class="info-panel">
+                <h3>Чернобыль (Chernobyl, 2019)</h3>
+                <p><strong>Рейтинг:</strong> 9.3/10</p>
+                <p><strong>Жанр:</strong> Боевик, Триллер, Фантастика</p>
+                <p><strong>Режиссер:</strong> Крэйг Мейзин</p>
+                <p>Реконструкция событий аварии на Чернобыльской АЭС в 1986 году, с акцентом на героизм, замалчивание и последствия.</p>
+            </div>       
+        </section>
+        
+        <footer>
+              <div class="copyright">
+                &copy; 2025 KATAIMDb. Все права защищены.
+              </div>
+            </div>
+          </footer>
+          
+
+ 
+</body>
+</html>
